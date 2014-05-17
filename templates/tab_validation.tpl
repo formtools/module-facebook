@@ -1,4 +1,4 @@
-  <form action="edit.php" method="post" onsubmit="return rsv.validate(this, rules)">
+  <form action="edit.php" method="post">
     <input type="hidden" name="fb_id" value="{$config_info.fb_id}" />
 
     <div class="margin_bottom_large margin_top">

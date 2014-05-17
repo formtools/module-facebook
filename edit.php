@@ -33,9 +33,16 @@ $tabs = array(
         )
     );
 
+$links = fb_get_form_prev_next_links($fb_id);
+$prev_tabset_link = (!empty($links["prev_fb_id"])) ? "edit.php?page=$page&fb_id={$links["prev_fb_id"]}" : "";
+$next_tabset_link = (!empty($links["next_fb_id"])) ? "edit.php?page=$page&fb_id={$links["next_fb_id"]}" : "";
+
 $page_vars = array();
 $page_vars["tabs"] = $tabs;
 $page_vars["page"] = $page;
+$page_vars["show_tabset_nav_links"] = true;
+$page_vars["prev_tabset_link"] = $prev_tabset_link;
+$page_vars["next_tabset_link"] = $next_tabset_link;
 $page_vars["head_string"] =<<< END
 <script src="global/scripts/configuration.js"></script>
 <link type="text/css" rel="stylesheet" href="global/css/styles.css">
@@ -56,4 +63,3 @@ switch ($page)
     require("page_advanced.php");
     break;
 }
-

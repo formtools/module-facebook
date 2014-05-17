@@ -8,6 +8,7 @@ if (isset($request["update"]))
 $config_info = fb_get_form($fb_id);
 $js = fb_get_form_view_mapping_js();
 
+$page_vars["form_name"] = ft_get_form_name($config_info["form_id"]);
 $page_vars["js_messages"] = array("phrase_please_select", "phrase_please_select_form", "word_edit", "word_delete");
 $page_vars["config_info"] = $config_info;
 $page_vars["head_js"] =<<< EOF

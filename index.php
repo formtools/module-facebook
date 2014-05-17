@@ -130,7 +130,6 @@ $(function() {
   fb_ns.init_configure_form_page("add");
 });
 
-
 END;
 
 ft_display_module_page("templates/index.tpl", $page_vars);

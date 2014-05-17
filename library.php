@@ -3,12 +3,11 @@
 /**
  * Facebook module.
  *
- * @copyright Encore Web Studios 2011
- * @author Encore Web Studios <formtools@encorewebstudios.com>
+ * @copyright Encore Web Studios 2012
+ * @author Ben Keen <ben.keen@gmail.com>
  */
 
 // -------------------------------------------------------------------------------------------------
 
-$folder = dirname(__FILE__);
-require_once("$folder/global/code/general.php");
-require_once("$folder/global/code/module.php");
+require_once(dirname(__FILE__) . "/global/code/general.php");
+require_once(dirname(__FILE__) . "/global/code/module.php");

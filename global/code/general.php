@@ -221,7 +221,7 @@ function fb_update_form($fb_id, $tab, $info)
       }
 
       $serialized_str = implode("`", $error_fields);
-      ft_set_module_settings(array("serialized_error_fields" => $serialized_str));
+      ft_set_module_settings(array("serialized_error_fields_{$fb_id}" => $serialized_str));
       $success = true;
       $message = $L["notify_form_not_updated"];
       break;
@@ -275,3 +275,48 @@ function fb_delete_form($fb_id)
   }
 }
 
+
+/**
+ * This returns the IDs of the previous and next Facebook configurations.
+ *
+ * @param integer $form_id
+ * @param array $search_criteria
+ * @return hash prev_form_id => the previous account ID (or empty string)
+ *              next_form_id => the next account ID (or empty string)
+ */
+function fb_get_form_prev_next_links($form_id)
+{
+  global $g_table_prefix;
+
+  $query = mysql_query("
+    SELECT fb_id
+    FROM   {$g_table_prefix}module_facebook_forms
+    ORDER BY fb_id
+  ");
+
+  $sorted_fb_ids = array();
+  while ($row = mysql_fetch_assoc($query))
+  {
+    $sorted_fb_ids[] = $row["fb_id"];
+  }
+  $current_index = array_search($form_id, $sorted_fb_ids);
+
+  $return_info = array("prev_fb_id" => "", "next_fb_id" => "");
+  if ($current_index === 0)
+  {
+    if (count($sorted_fb_ids) > 1)
+      $return_info["next_fb_id"] = $sorted_fb_ids[$current_index+1];
+  }
+  else if ($current_index === count($sorted_fb_ids)-1)
+  {
+    if (count($sorted_fb_ids) > 1)
+      $return_info["prev_fb_id"] = $sorted_fb_ids[$current_index-1];
+  }
+  else
+  {
+    $return_info["prev_fb_id"] = $sorted_fb_ids[$current_index-1];
+    $return_info["next_fb_id"] = $sorted_fb_ids[$current_index+1];
+  }
+
+  return $return_info;
+}

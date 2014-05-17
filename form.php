@@ -45,7 +45,7 @@ foreach ($shared_resources_array as $resource)
 $g_smarty->assign("page", "admin_edit_submission");
 
 // deserialize the list of error fields and pass them to the template
-$serialized_error_fields = ft_get_module_settings("serialized_error_fields");
+$serialized_error_fields = ft_get_module_settings("serialized_error_fields_{$fb_id}");
 $pairs = explode("`", $serialized_error_fields);
 $error_field_ids = array();
 $rules = array();

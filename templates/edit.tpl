@@ -8,7 +8,7 @@
       <span class="joiner">&raquo;</span>
       <a href="./">{$L.module_name}</a>
       <span class="joiner">&raquo;</span>
-      {$L.phrase_configure_form}
+      {$form_name}
     </td>
   </tr>
   </table>

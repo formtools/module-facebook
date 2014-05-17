@@ -5,9 +5,9 @@
     <tr>
       <td class="pad_left_small" width="180">{$L.phrase_show_like_button}</td>
       <td>
-        <input type="radio" name="show_like_button" id="show_like_button1" value="yes" {if $config_info.show_like_button == "yes"}checked{/if} />
+        <input type="radio" name="show_like_button" id="show_like_button1" value="yes" {if $config_info.show_like_button == "yes"}checked="checked"{/if} />
           <label for="show_like_button1">{$LANG.word_yes}</label>
-        <input type="radio" name="show_like_button" id="show_like_button2" value="no" {if $config_info.show_like_button == "no"}checked{/if} />
+        <input type="radio" name="show_like_button" id="show_like_button2" value="no" {if $config_info.show_like_button == "no"}checked="checked"{/if} />
           <label for="show_like_button2">{$LANG.word_no}</label>
       </td>
     </tr>
