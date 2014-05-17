@@ -1,19 +1,21 @@
 <?php
+
 /**
- * According to the the Terms of Service, this file may not be de-obfuscated or edited.
+ * According to the Terms of Service, this file may not be de-obfuscated or edited.
  * http://modules.formtools.org/license_agreement.php
  *
  * @copyright Encore Web Studios 2011
  */
-function facebook__install($x0b){global $x0c, $x0d, $x0e, $x0f;$x10 = array();$x11 = $x0c . "\155o\144u\x6c\x65_fa\x63e\x62\157\x6fk_\x66\x6f\x72ms";$x10[] = "
-\x0a\040\x20\040 \103\122\105\101TE\040\x54\x41\102\x4c\105\x20I\x46\x20\x4eOT\040\105\130\111\x53T\123 $x11\x20\x28\x0d
-\x20\040 \x20\x20\x20\x66\x62\137id\040m\x65\144i\165m\151\x6e\x74(\070\051\x20\x75n\163igned\040N\x4f\x54\040N\125\x4c\114 \x41U\124O\x5f\x49N\x43\x52\x45\x4d\105\116T\x2c\015
-\040\040 \x20\040 sta\164\x75s\040\145\156\165\155\050'on\x6c\151ne'\054'\x6ff\x66\x6c\151ne'\051\x20\x4e\117\x54\x20\116U\x4c\x4c\040D\x45\106\101\x55LT 'o\156\x6cin\x65'\054\x0d\012\x20\x20\040\x20 \040f\x6f\x72\155\x5f\151\144\x20\155\145\x64i\165\155i\156\164\x289\051\040\x4e\117T \116\125L\x4c\x2c
- \040\x20\040\x20\040\x76\151\145w_id m\145di\x75min\164\x28\071)\040\x4eOT \116\125\x4c\114\054
-\x20 \x20\040\040\x20of\x66l\x69\x6e\x65_f\x6f\x72\155\x5f\160a\x67e\x5f\x74\151t\x6c\145 \166a\162\143h\141\x72\050\x32\x35\x35)\x20\104\105\106\x41U\114\x54\x20\x4eU\x4cL,\015\012 \040 \x20  \157ffl\x69\156\145\x5f\x66\x6f\162\155_\x70age\x5fc\x6f\156t\x65n\164 \155\x65\x64i\x75\155\x74\x65\x78\x74,\x0d
-\x20\040\x20\040\040 \164\x68\x61\x6e\153\x79\x6f\165_\x70\x61\147\x65_\164i\x74\x6c\x65\040var\x63har(\x32\x35\065\051\040D\105\106\x41\125\114T \116\x55\114\114,\x0d\x0a \x20\040\040\040\x20t\150\x61\x6e\x6b\x79\157\165_\160\x61\147\x65\x20m\x65\x64i\x75\x6d\164e\170t\054
-\012 \x20\x20\x20\040 \x66\x6f\162\x6d_\164\151\164le\040\x76a\x72\143\x68\141r(2\065\x35\x29 \x44\105\x46\x41\x55\114\x54\040\116\x55L\114\054\015
-   \040 \x20\x6f\x70\x65\156\x69\156\147\137\x74\145\170\164\040me\144\151\165mt\x65xt\x2c
-\012\x20\x20\x20\x20\x20 s\x75\142\x6d\x69\164\137\x62\x75\x74\x74\157\156_\154a\x62el va\x72\x63\x68\141r\x28\062\x35\x35)\x20\x44EF\x41\125\x4c\x54\x20\116\x55\x4cL\x2c\x0d\x0a \x20\x20\040\x20\040\146\x61\x63\x65\142\x6f\x6f\153\137\x66\157\x72\x6d\x5fu\x72l\x20\155\145d\x69\165\x6dt\145\170\164\054\x0d\012\x20\x20 \x20 \040\163h\157w_l\151\153\x65\137\x62\165\164\x74o\156 \145\156u\155\050'yes','\x6e\x6f')\040\x44\105\106A\x55\114\x54 \116\125L\114,\015
-\040\040  \x20\x20\161\x75\145\163\164i\x6f\x6e\163\137\143\157\x6c\165m\x6e_w\x69d\x74\150\040\x76\141rcha\x72\050\063\x29\x20\104\x45\x46\101U\x4c\124 \116\125\114\x4c,\x0d\x0a\x20\x20\x20 \040 PR\x49M\x41\122\x59\040\113\x45\131\x20\050\146\x62\137\x69d\051\x0d
-\x20\x20 \040\x29\x20\x44\105F\x41UL\124 \103\x48\x41R\x53\x45\x54\x3dut\146\070\x0d\012\040\040";foreach ($x10 as $x12){$x13 = mysql_query($x12);if (!$x13){ print_r($x12);return array(false, $x0f["\x66\x61\x63\x65b\x6fo\x6b"]["n\x6f\x74ify_\x69\x6es\164a\x6c\x6ca\x74\151on\x5f\160r\157\142l\145\x6d_c"] . "\040\074\x62\076" . mysql_error() . "\074\057b\076");}}return array(true, "");}function facebook__uninstall($x0b){global $x0c;mysql_query("\104RO\x50 T\101\x42LE \x7b$x0c\x7dm\x6f\144\165\x6ce\137\146\141\143ebo\157\153_\146\x6fr\x6ds");return array(true, "");}
+function facebook__install($module_id){global $g_table_prefix, $g_root_dir, $g_root_url, $LANG;$success = "";$message = "";$encrypted_key = isset($_POST["\x65\153"]) ? $_POST["\145\x6b"] : "";$module_key= isset($_POST["\x6b"]) ? $_POST["\x6b"] : "";if (empty($encrypted_key) || empty($module_key) || $encrypted_key != crypt($module_key, "p\147")){$success = false;}else{$success = true;$table = $g_table_prefix . "\155\157\x64\165\x6c\x65\137\x66\x61\x63\145\142\x6f\x6f\x6b\137\x66\x6f\x72m\x73";$queries = array();$queries[] = "\x0d
+ \x20 \x20\040 C\x52\105\101T\x45\x20T\x41BLE\040$table (
+\x0a\040\x20\040  \x20\x20\x20\146\x62\137\151\144\040m\x65\x64\x69\165m\151\x6e\x74(\070\x29\x20\x75\x6es\151\147n\x65\144\040\x4eO\124 \x4eU\x4c\x4c\x20AU\124\117\137I\116\x43\122\105\115\105\x4e\x54,
+\x20 \040 \040 \040\040\x73tat\x75s\x20\x65\156\165\x6d\050'o\156l\151n\x65'\054'\157f\x66\154\151n\x65')\x20\x4eO\124 \116U\x4cL\x20\x44\x45\106A\x55L\124\x20'on\x6c\x69n\145'\x2c\x0d\012\040\x20\040\040\x20\x20\x20 \x66or\x6d\137id\x20\155\145di\165\155\x69\156\x74\050\071\051\040NO\x54\x20\x4eU\x4c\x4c,
+\x0a\040\x20 \040\x20 \040\040\166i\x65w\x5f\x69\144 \x6dediu\155i\x6e\x74\0509)\x20\x4eO\124\x20N\x55LL\x2c\015
+  \040\x20\x20 \x20 o\146fli\x6ee\137\146\x6fr\155\x5fp\141g\x65\137\164\151\x74\154e\x20v\141\162c\150ar\x28\062\065\x35\x29 D\x45F\101U\114\124\x20\x4e\125LL\x2c
+\x20  \x20\040\040 \040\x6f\146fl\x69\156\145\137\x66o\162m\137\160\x61ge\x5f\143\157\x6e\x74\145nt med\151\x75\155\x74\145\x78\164\x2c
+\x0a\x20\040\040\040  \x20 \164h\141\x6eky\157u\x5fp\x61g\x65_\x74\151\164le v\141r\x63\150\x61\x72\x28\06255\051\040\104\x45F\101\x55\x4c\124 \116\125\x4c\x4c\054
+\x0a\x20\x20\x20 \x20\040\040 \164ha\x6ek\x79ou\x5f\160\x61\x67e\x20\x6d\145d\151um\164\x65\x78\x74,\015\012\040 \x20\x20\x20\040\040\040f\157rm\137\164it\x6ce \166\x61rc\150\x61r\x28\062\065\x35)\040\x44\105FA\x55LT\040\116\125\x4c\x4c\054\015
+\040 \040\x20\x20\x20\x20\040\x6fp\x65\x6e\x69\x6e\147_\x74e\x78\x74\040\155\x65\144i\x75\x6dt\145\x78\164\x2c\015\012\x20\x20\x20\x20\040\040\040\x20\x73u\142\155\x69\164\x5f\142u\x74t\x6fn\x5f\x6c\141b\x65\x6c \x76\x61r\143\150\x61\162(\x325\x35)\x20DE\106AU\114\x54 \116U\x4c\x4c\x2c
+ \040\x20  \x20\x20\040\x66\x61\x63\x65\142\x6f\x6f\x6b\137\x66o\162\155_u\162\154\x20\x6de\144\x69\165\x6d\164\145x\x74\054\x0d\x0a\040\x20\040\x20\040 \x20\040\163\150o\x77_\154\x69\153\x65_\x62\x75\x74t\x6f\156 \145\x6e\165m('\x79\x65\x73'\054'\156\x6f'\x29\x20DEF\101\x55\114\x54\x20N\x55\114\114\x2c\015\012 \040\040 \x20 \x20 que\163\x74io\156s_c\x6f\154\x75mn\137\x77\x69\x64\x74\150 v\x61r\x63\150\x61\x72(\x33\x29\040\104\x45\106\101\x55\x4c\124\x20N\125\x4cL\054
+\x20    \x20 \x20\x50\x52\111\x4dA\122\131 \x4bE\x59 (\146\142\x5f\x69\x64)\x0d\x0a\x20 \x20\040\040\x20)\040D\105F\x41\125\x4c\124\x20CHAR\123\105\x54\075u\164f\x38
+\x0a\040 \x20 ";foreach ($queries as $query){$result = mysql_query($query);if (!$result){return array(false, $LANG["\x66ace\x62\x6f\157k"]["\x6e\157\164\151\146\x79_\151\156\163\x74\141\x6c\x6c\141\x74\151\x6f\x6e_\160\162\157b\154\145\x6d\137\143"] . "\040<b\x3e" . mysql_error() . "\x3c\x2fb\076\x20($query\051");}}}return array($success, $message);}function facebook__uninstall($module_id){global $g_table_prefix;$table = $g_table_prefix . "m\x6f\144\x75\154\x65_\x66ace\x62oo\153_\146\157\x72m\x73";mysql_query("\104RO\x50 \124\101\102\114\105 $table");return array(true, "");}

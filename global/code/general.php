@@ -23,7 +23,7 @@ function fb_get_forms($num_per_page, $page_num = 1)
       FROM   {$g_table_prefix}module_facebook_forms
       ORDER BY fb_id
       LIMIT $first_item, $num_per_page
-        ") or handle_error(mysql_error());
+        ") or ft_handle_error(mysql_error());
   }
 
   $count_query = mysql_query("SELECT count(*) as c FROM {$g_table_prefix}module_facebook_forms");
