@@ -1,4 +1,6 @@
-## module-facebook_forms
+## Facebook Forms
+
+> This module is no longer supported.
 
 The Facebook Forms module is a great way to create Facebook forms for you or your clients, accessible and styled according to the familiar Facebook interface.
 
@@ -6,13 +8,10 @@ There are no limitations to the number or size of your forms, what information y
 
 Up until version 1.0.2, this module was a premium module. As of version 1.0.3 it is now available for free download.
 
-For more information, see the documentation.
 
-### Documentation
+### Other Links
 
-[http://modules.formtools.org/facebook_forms/](http://modules.formtools.org/facebook_forms/)
-
-### Form Tools Extensions
-
-For further information about Form Tools extensions, check out the following link:
-[http://www.formtools.org/extensions.php](http://www.formtools.org/extensions.php)
+- [Available Form Tools modules](https://modules.formtools.org/)
+- [About Form Tools modules](https://docs.formtools.org/userdoc/modules/) 
+- [Installation instructions](https://docs.formtools.org/userdoc/modules/installing/)
+- [Upgrading](https://docs.formtools.org/userdoc/modules/upgrading/)
